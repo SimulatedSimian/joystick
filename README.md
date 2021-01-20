@@ -33,7 +33,7 @@ fmt.Printf("Joystick Name: %s", js.Name())
 fmt.Printf("   Axis Count: %d", js.AxisCount())
 fmt.Printf(" Button Count: %d", js.ButtonCount())
 
-state, err := joystick.Read()
+state, err := js.Read()
 if err != nil {
   panic(err)
 }
